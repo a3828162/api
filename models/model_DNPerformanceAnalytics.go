@@ -16,12 +16,6 @@ type DNPerformanceAnalyticsFilter struct {
 	// ListOfAnalyticsSubsets   []string      `json:"list_of_analytics_subsets" yaml:"list_of_analytics_subsets"`
 }
 
-type PerformanceData struct {
-	PacketDelay           float64 `json:"packet_delay" yaml:"packet_delay"`
-	LossRate              float64 `json:"loss_rate" yaml:"loss_rate"`
-	PerformanceThroughput float64 `json:"throughput" yaml:"throughput"`
-}
-
 type DNPerformanceAnalyticsStatistic struct {
 	ApplicationId             string                  `json:"application_id" yaml:"application_id"`
 	Snssai                    models.Snssai           `json:"snssai" yaml:"snssai"`

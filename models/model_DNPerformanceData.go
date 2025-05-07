@@ -17,6 +17,12 @@ type DNPerformanceAnalyticsInputData struct {
 	TimeStamp                        time.Time           `json:"timestamp" yaml:"timestamp"`
 }
 
+type PerformanceData struct {
+	PacketDelay           float64 `json:"packet_delay" yaml:"packet_delay"`
+	LossRate              float64 `json:"loss_rate" yaml:"loss_rate"`
+	PerformanceThroughput float64 `json:"throughput" yaml:"throughput"`
+}
+
 type DNPerformance struct {
 	ApplicationServerInstanceAddress models.IpAddr     `json:"application_server_instance_address" yaml:"application_server_instance_address"`
 	ServingAnchorUPF                 string            `json:"serving_anchor_upf,omitempty" yaml:"serving_anchor_upf,omitempty"`
